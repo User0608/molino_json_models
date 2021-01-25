@@ -71,7 +71,8 @@ public class JUsuario {
 				retorno+=r.getName() +",";
 			}
 		}
-		return retorno.substring(0,retorno.length()-1);
+		if(retorno.length()!=0) retorno=retorno.substring(0,retorno.length()-1);
+		return retorno;
 	}
 	public void setRoles(List<JRole> roles) {
 		this.roles = roles;
