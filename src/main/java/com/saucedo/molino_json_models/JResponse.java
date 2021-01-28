@@ -1,8 +1,9 @@
 package com.saucedo.molino_json_models;
 
 public class JResponse {
-	public static final String OK ="EXITO";
-	public static final String ERROR ="ERROR";
+	public static final String OK ="success";
+	public static final String ERROR ="Error";
+	public static final String REGISTRO_NOT_FOUND ="No se encontro el registro";
 	
 	public static final String ERROR_USUARI_EXISTE ="USUARIO EXISTE";
 	private String response;
