@@ -90,6 +90,11 @@ public class JUsuario {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	@Override
+	public String toString() {
+		return "JUsuario [id=" + id + ", username=" + username + ", password=" + password + "]";
+	}
 	
 	
 }
