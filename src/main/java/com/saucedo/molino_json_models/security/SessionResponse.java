@@ -6,6 +6,7 @@ import java.util.List;
 public class SessionResponse {
 	private String token;
 	private String username;
+	private String owner;
 	private List<String> roles;
 
 	
@@ -13,9 +14,10 @@ public class SessionResponse {
 	public SessionResponse() {
 		
 	}
-	public SessionResponse(String token, String username, List<String> roles) {
+	public SessionResponse(String token, String username,String owner, List<String> roles) {
 		this.token = token;
 		this.username = username;
+		this.owner=owner;
 		this.roles = roles;		
 	}
 
@@ -44,8 +46,12 @@ public class SessionResponse {
 		return roles;
 	}
 
-
-
+	public String getOwner() {
+		return owner;
+	}
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
 	public void setRoles(List<String> roles) {
 		this.roles = roles;
 	}

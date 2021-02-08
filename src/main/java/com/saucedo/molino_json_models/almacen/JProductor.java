@@ -76,6 +76,9 @@ public class JProductor {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public String completeName() {
+		return this.nombre+" "+this.apellidoPaterno+" "+this.apellidoMaterno;
+	}
 
 	@Override
 	public String toString() {

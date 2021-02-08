@@ -98,6 +98,9 @@ public class JEmpleado {
 		public void setUsuario(JUsuario usuario) {
 			this.usuario = usuario;
 		}
+		public String completeName() {
+			return this.nombre+" "+this.apellidoPaterno+" "+this.apellidoMaterno;
+		}
 		@Override
 		public String toString() {
 			return "JEmpleado [id=" + id + ", nombre=" + nombre + ", apellidoPaterno=" + apellidoPaterno
