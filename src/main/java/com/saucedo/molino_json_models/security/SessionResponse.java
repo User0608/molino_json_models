@@ -7,18 +7,18 @@ public class SessionResponse {
 	private String token;
 	private String username;
 	private String owner;
+	private int status;
 	private List<String> roles;
-
-	
 	
 	public SessionResponse() {
 		
 	}
-	public SessionResponse(String token, String username,String owner, List<String> roles) {
+	public SessionResponse(String token, String username,String owner, List<String> roles,int status) {
 		this.token = token;
 		this.username = username;
 		this.owner=owner;
 		this.roles = roles;		
+		this.status=status;
 	}
 
 	public String getToken() {
@@ -34,8 +34,12 @@ public class SessionResponse {
 		return username;
 	}
 
-
-
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
 	public void setUsername(String username) {
 		this.username = username;
 	}

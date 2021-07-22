@@ -4,6 +4,7 @@ public class JResponse {
 	public static final String OK ="success";
 	public static final String ERROR ="Error";
 	public static final String REGISTRO_NOT_FOUND ="No se encontro el registro";
+	public static final String REGISTRO_DNI_DUPLICADO ="El DNI ya existe.";
 	
 	public static final String ERROR_USUARI_EXISTE ="USUARIO EXISTE";
 	private String response;
